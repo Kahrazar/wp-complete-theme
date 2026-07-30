@@ -1,0 +1,44 @@
+{
+    "source_url": "http://localhost:8081",
+    "locale": "es_CR",
+    "permalink_structure": "/%postname%/",
+    "show_on_front": "page",
+    "front_page": {
+        "original_id": 59,
+        "slug": "shop"
+    },
+    "posts_page": {
+        "original_id": 0,
+        "slug": ""
+    },
+    "shop_page": {
+        "original_id": 59,
+        "slug": "shop"
+    },
+    "custom_logo": {
+        "original_id": 0,
+        "file": ""
+    },
+    "menu_locations": {
+        "secondary": {
+            "original_id": 0,
+            "name": "",
+            "slug": ""
+        },
+        "primary": {
+            "original_id": 76,
+            "name": "Menu Principal",
+            "slug": "menu-principal"
+        },
+        "mobile": {
+            "original_id": 0,
+            "name": "",
+            "slug": ""
+        },
+        "footer": {
+            "original_id": 0,
+            "name": "",
+            "slug": ""
+        }
+    }
+}

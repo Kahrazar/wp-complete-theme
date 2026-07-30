@@ -1,0 +1,25 @@
+.underline{text-decoration: underline;text-decoration-thickness: 2px;}
+
+
+.post-type-archive-product .product, .wp-post-image, .content-bg .product.entry.loop-entry, .woocommerce-page .content-bg .product.entry.loop-entry, .woocommerce ul.products li.product a img, .woocommerce ul.products li.product .entry-content-wrap{
+	border-radius: 24px;
+}
+
+.single-product div.product .woocommerce-tabs ul.tabs li{border: none;
+	font-size: 20px; line-height: 23px;
+}
+
+.single-product div.product .woocommerce-tabs ul.tabs li.active {
+	border-bottom: 3px solid #293a35;
+	margin: 0px;
+}
+
+.single-product div.product .woocommerce-tabs ul.tabs li {
+	background-color: transparent;
+	}
+
+.single-product div.product .woocommerce-tabs ul.tabs {
+	border-bottom: 1px solid #293a35;
+	padding-left: 0px;
+}
+input, textarea {border-radius: 0px!important;}
