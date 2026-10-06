@@ -388,7 +388,7 @@
     },
     "product_archive_content_background": {
         "desktop": {
-            "color": "#ffffff",
+            "color": "palette9",
             "image": {
                 "url": "",
                 "size": "cover",
@@ -435,8 +435,8 @@
         "flag": true
     },
     "header_cart_total_color": {
-        "color": "palette9",
-        "hover": "#ffffff"
+        "color": "var(--brand-on-accent, #ffffff)",
+        "hover": "var(--brand-on-accent, #ffffff)"
     },
     "header_cart_total_background": {
         "color": "palette2",
