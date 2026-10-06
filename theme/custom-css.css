@@ -10,7 +10,7 @@
 }
 
 .single-product div.product .woocommerce-tabs ul.tabs li.active {
-	border-bottom: 3px solid #293a35;
+	border-bottom: 3px solid var(--global-palette6);
 	margin: 0px;
 }
 
@@ -19,7 +19,7 @@
 	}
 
 .single-product div.product .woocommerce-tabs ul.tabs {
-	border-bottom: 1px solid #293a35;
+	border-bottom: 1px solid var(--global-palette6);
 	padding-left: 0px;
 }
 input, textarea {border-radius: 0px!important;}
