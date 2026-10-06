@@ -9,6 +9,8 @@ export WP_CLI_ALLOW_ROOT=1
 
 WP_PATH="/var/www/html"
 EXPORT_DIR="${1:-/tmp/design-export}"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+COLOR_NORMALIZER="${SCRIPT_DIR}/normalize-design-colors.php"
 
 WP=(
     wp
@@ -27,6 +29,11 @@ echo
 # 1. Validaciones iniciales.
 #
 "${WP[@]}" core is-installed
+
+if [[ ! -f "${COLOR_NORMALIZER}" ]]; then
+    echo "ERROR: falta ${COLOR_NORMALIZER}; copie la carpeta scripts completa." >&2
+    exit 1
+fi
 
 if ! "${WP[@]}" theme is-active kadence; then
     echo "ERROR: Kadence no está activo." >&2
@@ -134,6 +141,10 @@ echo is_string($css) ? $css : "";
 ' > "${EXPORT_DIR}/theme/custom-css.css"
 
 echo "CSS adicional exportado."
+
+# Mantener los colores conocidos del template conectados a las variables runtime.
+# No reemplaza colores personalizados ni defaults de gradientes/sombras inactivos.
+"${WP[@]}" eval-file "${COLOR_NORMALIZER}" "${EXPORT_DIR}"
 
 #
 # 8. Empaquetar la Media Library.
