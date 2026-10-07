@@ -905,7 +905,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>If you’ve done all of this and you still have not received your refund yet, please contact us at {email address}.</p>
+<p>If you’ve done all of this and you still have not received your refund yet, please contact us at {{EI_WEBSITE_EMAIL}}.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -921,7 +921,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We only replace items if they are defective or damaged. If you need to exchange it for the same item, send us an email at {email address} and send your item to: {physical address}.</p>
+<p>We only replace items if they are defective or damaged. If you need to exchange it for the same item, send us an email at {{EI_WEBSITE_EMAIL}} and send your item to: {{EI_WEBSITE_EXACT_ADDRESS}}.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -941,7 +941,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>To return your product, you should mail your product to: {physical address}.</p>
+<p>To return your product, you should mail your product to: {{EI_WEBSITE_EXACT_ADDRESS}}.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -961,7 +961,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Contact us at {email} for questions related to refunds and returns.</p>
+<p>Contact us at {{EI_WEBSITE_EMAIL}} for questions related to refunds and returns.</p>
 <!-- /wp:paragraph -->]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>10</wp:post_id>
